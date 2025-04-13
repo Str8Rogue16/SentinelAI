@@ -24,3 +24,50 @@ SentinelAI is an AI-enhanced cybersecurity tool that scans WiFi and cellular env
    ```bash
    git clone https://github.com/yourusername/SentinelAI.git
    cd SentinelAI
+2. ** Install Dependencies:**
+   ```bash
+   pip install -r requirements.txt
+3. ** Add your Gemini API key to .env or .sources file:
+   ```bash
+   GEMINI_API_KEY=your_key_here
+4. ** Run version for demo/testing
+   ```bash
+   python main.py
+
+## 🧠 How It Works
+SentinelAI uses scapy to capture WiFi access point data and analyzes it for anomalies using the Gemini AI model. It detects:
+Multiple BSSIDs with same SSID on different channels
+Signal strength anomalies suggesting spoofing
+Potential rogue APs with unusually strong signals
+   
+** Example Anlaysis:
+json 
+{
+  "ssid": "Free_Wifi",
+  "anomaly": "Signal strength variance",
+  "threat_level": "Moderate",
+  "recommendation": "Investigate strong APs for legitimacy."
+}
+
+
+## 🛠️ Tech Stack
+Python 3.12+
+Scapy (for packet sniffing)
+Google Gemini API (AI analysis)
+dotenv (for API key management)
+
+## 📜 License
+MIT License — see LICENSE for details.
+
+## 💡 Future Plans
+Cellular tower scanning (Android device integration or SDR)
+Real-time dashboard
+Threat scoring history and logging
+Deployment as Raspberry Pi perimeter sensor
+
+ ## 🤝 Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you’d like to change.
+
+## 🔗 Credits
+Google Generative AI (Gemini)
+Scapy
