@@ -48,12 +48,9 @@ json
   "anomaly": "Signal strength variance",
   "threat_level": "Moderate",
   "recommendation": "Investigate strong APs for legitimacy."
-} **
+} 
 
-
-
-
-## 🛠️ Tech Stack
+## 🛠️ Tech Stack 
 Python 3.12+
 Scapy (for packet sniffing)
 Google Gemini API (AI analysis)
