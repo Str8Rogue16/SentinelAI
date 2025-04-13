@@ -41,7 +41,7 @@ Signal strength anomalies suggesting spoofing
 Potential rogue APs with unusually strong signals
    
 ** Example Anlaysis:
-json 
+''' json 
 {
   "ssid": "Free_Wifi",
   "anomaly": "Signal strength variance",
