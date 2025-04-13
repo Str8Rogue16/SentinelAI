@@ -40,15 +40,16 @@ Multiple BSSIDs with same SSID on different channels
 Signal strength anomalies suggesting spoofing
 Potential rogue APs with unusually strong signals
    
-** Example Anlaysis:
-   ```bash
-json 
+```markdown
+**Example Analysis:**
+```json
 {
   "ssid": "Free_Wifi",
   "anomaly": "Signal strength variance",
   "threat_level": "Moderate",
   "recommendation": "Investigate strong APs for legitimacy."
-} 
+}
+```
 
 ## 🛠️ Tech Stack 
 Python 3.12+
